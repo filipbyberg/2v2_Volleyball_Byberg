@@ -5,7 +5,7 @@
 **Ultimate Volleyball** is a multi-agent reinforcement learning environment built on [Unity ML-Agents](https://unity.com/products/machine-learning-agents).
 
 
-This projecct is based on Joy Zhangs "Ultimate Volleyball" project [https://github.com/CoderOneHQ/ultimate-volleyball]. Extending from a simple 1v1 volleyball game, to a 2v2 cooperative game with cooperative agents.
+This projecct is based on Joy Zhangs "Ultimate Volleyball" project [https://github.com/CoderOneHQ/ultimate-volleyball]. Extending from a simple 1v1 volleyball game, to a 2v2 cooperative game with cooperative agents. For videos of the results, check out my youtube videos https://www.youtube.com/watch?v=8eHXaw4Eoz0
 
 > **Version:** Up-to-date with ML-Agents Release 19
  
