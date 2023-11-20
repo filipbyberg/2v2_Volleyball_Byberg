@@ -1,7 +1,11 @@
 # 🏐 Ultimate Volleyball
+![Final_3_both (online-video-cutter com)](https://github.com/filipbyberg/2v2_Volleyball_Byberg/assets/80341025/ba19e55e-cf16-46ac-81ce-cf5da51a2a07)
 
 ## About
 **Ultimate Volleyball** is a multi-agent reinforcement learning environment built on [Unity ML-Agents](https://unity.com/products/machine-learning-agents).
+
+
+This projecct is based on Joy Zhangs "Ultimate Volleyball" project [https://github.com/CoderOneHQ/ultimate-volleyball]. Extending from a simple 1v1 volleyball game, to a 2v2 cooperative game with cooperative agents.
 
 > **Version:** Up-to-date with ML-Agents Release 19
  
@@ -33,7 +37,7 @@ To enable self-play:
 3. Set your reward function in `ResolveEvent()` in `VolleyballEnvController.cs`.
 
 ## Environment Description
-**Goal:** Get the ball to bounce in the opponent's side of the court while preventing the ball bouncing into your own court.
+**Goal:** Get the agents to play in a cooperative manner, with passing, shooting and proper positioning behvaviour.
 
 **Action space:**
 
@@ -45,20 +49,21 @@ To enable self-play:
 
 **Observation space:**
 
-Total size: 11
+Total size: 13
 - Agent Y-rotation (1)
 - Normalised directional vector from agent to ball (3)
 - Distance from agent to ball (1)
 - Agent X, Y, Z velocity (3)
 - Ball X, Y, Z relative velocity (3)
+- Magnitude distance to center (1)
+- Position Integer (1)
 
 **Reward function:**
 
-The project contains some examples of how the reward function can be defined.
-The base example gives a +1 reward each time the agent hits the ball over the net.
+There are implemented multiple different rewards to play with, some of wich are shooting over the net, zones for positioning, jumping penalty to avoid excessive jumping, passing mechanism, shooting out of bounds, etc. Not all of them are active as default, but are easily enabled to play around with.
 
 ## Baselines
-The following baselines are included:
-- `Volleyball_Random.onnx` - Random agent
-- `Volleyball_SelfPlay.onnx` - Trained using PPO with Self-Play in 60M steps
-- `Volleyball.onnx` - Trained using PPO in 60M steps (without Self-Play)
+The following trained models are included in Assets/Models_all/Final:
+- `Volleyball_Both.onnx` - Agents with shared policy to both pass and shoot
+- `Volleyball_Shooting.onnx` - Shooting and proper positioning behaviour
+- `Volleyball_Passing.onnx` - Passing and proper positioning behaviour
