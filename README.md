@@ -1,25 +1,15 @@
 # 🏐 Ultimate Volleyball
 
-![Ultimate Volleyball](https://www.gocoder.one/static/ultimate-volleyball-eb08a31356cf6a5add9ad2b3ec76cfc6.gif)
-
 ## About
 **Ultimate Volleyball** is a multi-agent reinforcement learning environment built on [Unity ML-Agents](https://unity.com/products/machine-learning-agents).
 
-See ['Ultimate Volleyball Micro-Machine Learning Course'](https://joooyz.gumroad.com/l/ultimate-volleyball) for an updated step-by-step micro-course. 
-
 > **Version:** Up-to-date with ML-Agents Release 19
  
-## Contents
-1. [Getting started](#getting-started)
-1. [Training](#training)
-1. [Self-play](#self-play)
-1. [Environment description](#environment-description)
-1. [Baselines](#baselines)
 
 ## Getting Started
 1. Install the [Unity ML-Agents toolkit](https:github.com/Unity-Technologies/ml-agents) (Release 19+) by following the [installation instructions](https://github.com/Unity-Technologies/ml-agents/blob/release_18_docs/docs/Installation.md).
-2. Download or clone this repo containing the `ultimate-volleyball` Unity project.
-3. Open the `ultimate-volleyball` project in Unity (Unity Hub → Projects → Add → Select root folder for this repo).
+2. Download or clone this repo containing the Unity project.
+3. Open the  project in Unity (Unity Hub → Projects → Add → Select root folder for this repo).
 4. Load the `VolleyballMain` scene (Project panel → Assets → Scenes → `VolleyballMain.unity`).
 5. Click the ▶ button at the top of the window. This will run the agent in inference mode using the provided baseline model.
 
