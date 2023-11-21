@@ -84,5 +84,6 @@ The following trained models are included in Assets/Models_all/Final:
 - `Volleyball_Passing.onnx` - Passing and proper positioning behaviour
 
 **Credit:**
-Thank you to Joy Zhang for making this cool project. I hope someone else out there can have the same learning benefit from this project, as i had with her :)
+Thank you to Joy Zhang for making this cool project. I hope someone else out there can have the same learning benefit from this project, as i had with hers :)
+
 ![joy](https://github.com/filipbyberg/2v2_Volleyball_Byberg/assets/80341025/d6a2d1f5-c50d-461e-8f07-b14be95b3e38)
