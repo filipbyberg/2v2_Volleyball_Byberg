@@ -82,3 +82,7 @@ The following trained models are included in Assets/Models_all/Final:
 - `Volleyball_Both.onnx` - Agents with shared policy to both pass and shoot
 - `Volleyball_Shooting.onnx` - Shooting and proper positioning behaviour
 - `Volleyball_Passing.onnx` - Passing and proper positioning behaviour
+
+**Credit:**
+Thank you to Joy Zhang for making this cool project. I hope someone else out there can have the same learning benefit from this project, as i had with her :)
+![joy](https://github.com/filipbyberg/2v2_Volleyball_Byberg/assets/80341025/d6a2d1f5-c50d-461e-8f07-b14be95b3e38)
