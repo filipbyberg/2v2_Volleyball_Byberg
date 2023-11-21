@@ -62,6 +62,21 @@ Total size: 13
 
 There are implemented multiple different rewards to play with, some of wich are shooting over the net, zones for positioning, jumping penalty to avoid excessive jumping, passing mechanism, shooting out of bounds, etc. Not all of them are active as default, but are easily enabled to play around with.
 
+**Positional Behaviour:**
+![2v2_env (1)](https://github.com/filipbyberg/2v2_Volleyball_Byberg/assets/80341025/82644349-a681-4516-a0b4-8415b884143e)
+
+To create a positional behaviour, 3 trigger zones was implemented. Left, Right and Middle zones. Each agent is assigned either Left or Right position, and will recieve a large penalty upon entering the wrong zone, and a smaller penalty for every frame it stays in the zone. The Middle zone functions as a free roaming area for both agents to avoid hesitation to approach the middle of the court.
+
+**Passing Behaviour:**
+![2v2_pass_env (2)](https://github.com/filipbyberg/2v2_Volleyball_Byberg/assets/80341025/4fb90fc3-2604-4d73-9da2-70f82767e572)
+
+The passing behaviour was achieved in a similar way, by creating aereal zones, that triggered when the ball entered the zone. Each agent only recieve a reward if they shoot the ball into the aereal zone on the opposite zone of their current position, on the same court side.
+
+**Shooting and Passing Behaviour:**
+![2v2_pass_env_update (1)](https://github.com/filipbyberg/2v2_Volleyball_Byberg/assets/80341025/8dc28bb7-ea36-4817-94ca-e88545157800)
+By introducing both passing and shooting behaviour with a shared policy among the agents, its important to apply a unique ID to each agent that correspond to their team and position. This enables us to give rewards to specific agents in the environment for specific occurences. Using the aerial zones introduced in the passingbehaviour, we can manipulate the desired ball trajectory by rewarding the agents accordingly.
+
+
 ## Baselines
 The following trained models are included in Assets/Models_all/Final:
 - `Volleyball_Both.onnx` - Agents with shared policy to both pass and shoot
